@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "student-attendance-manager"
+version = "0.1.0"
+description = "project to manage students attendance"
+authors = ["Ramon C. <ramon.colmenaresblanco@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^8.3.3"
+alembic = "^1.13.2"
+sqlalchemy = "^2.0.34"
+marshmallow = "^3.22.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
