@@ -8,6 +8,8 @@ RUN pip install poetry && \
 
 COPY . /app
 
+RUN poetry run pytest
+
 RUN poetry run alembic upgrade head
 
 ENTRYPOINT ["poetry", "run", "python", "main.py"]
